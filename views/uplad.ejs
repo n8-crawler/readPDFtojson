@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Pre-Filled Form Demo</title>
+</head>
+
+<body>
+	<h1>Update User</h1>
+
+	<form action="saveData" method="POST">
+		<pre>
+            <%for(let x of movieslist){%>
+                slno    : <input type="text" name="serial"
+                            value='<%=x[0] %>'> <br>
+ 
+                Name     : <input type="text" name="name"
+                            value='<%=x[1] %>'> <br>
+    
+                genre   : <input type="text" name="genre"
+                            value='<%=x[2] %>'> <br>
+
+
+                <%}%>
+
+			<input type="submit" value="Submit Form">
+		</pre>
+	</form>
+</body>
+
+</html>
